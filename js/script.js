@@ -6,7 +6,7 @@ let container = [];
 
 btn.addEventListener('click' , function(){
     spesaEl = userInput.value;
-    if(spesaEl === 'stop'){
+    if(spesaEl.toLowerCase() === 'stop'){
         btn.classList.add('d-none');
         alertOutput.innerText = container;
     } else{
@@ -16,7 +16,7 @@ btn.addEventListener('click' , function(){
         }
     }
     console.log(container);
-    
+    alertOutput.classList.add('alert-success');
     alertOutput.classList.remove('d-none');
 })
 
